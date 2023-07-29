@@ -1,0 +1,101 @@
+[
+  {
+    "_id": 1,
+    "name": "Spanish Beginners",
+    "image": "https://live.staticflickr.com/65535/53079369968_535324808b_m.jpg",
+    "price": 150,
+    "instructor_name": "Maria Rodriguez",
+    "instructor_image": "https://live.staticflickr.com/65535/53080010288_077f334bcf_m.jpg",
+    "instructor_email": "maria.rodriguez@example.com",
+    "available_seats": 10,
+    "number_of_students": 5
+  },
+  {
+    "_id": 2,
+    "name": "French Intermediate",
+    "image": "https://live.staticflickr.com/65535/53079369978_8b7700e3cf_m.jpg",
+    "price": 180,
+    "instructor_name": "Pierre Dubois",
+    "instructor_image": "https://live.staticflickr.com/65535/53080010278_695b3e35b9_m.jpg",
+    "instructor_email": "pierre.dubois@example.com",
+    "available_seats": 8,
+    "number_of_students": 3
+  },
+  {
+    "_id": 3,
+    "name": "German Advanced",
+    "image": "https://live.staticflickr.com/65535/53078313122_d88d540f0f_m.jpg",
+    "price": 200,
+    "instructor_name": "Hans Müller",
+    "instructor_image": "https://live.staticflickr.com/65535/53079506211_cfae042976_m.jpg",
+    "instructor_email": "hans.mueller@example.com",
+    "available_seats": 5,
+    "number_of_students": 2
+  },
+  {
+    "_id": 4,
+    "name": "Italian for Travelers",
+    "image": "https://live.staticflickr.com/65535/53079280440_3de12c60b8_m.jpg",
+    "price": 120,
+    "instructor_name": "Giulia Rossi",
+    "instructor_image": "https://live.staticflickr.com/65535/53080010303_8f60a0bdec_m.jpg",
+    "instructor_email": "giulia.rossi@example.com",
+    "available_seats": 12,
+    "number_of_students": 8
+  },
+  {
+    "_id": 5,
+    "name": "Mandarin Chinese Beginners",
+    "image": "https://live.staticflickr.com/65535/53079369908_4f054343c2_m.jpg",
+    "price": 160,
+    "instructor_name": "Li Wei",
+    "instructor_image": "https://live.staticflickr.com/65535/53079506206_5ff06e06c7_m.jpg",
+    "instructor_email": "li.wei@example.com",
+    "available_seats": 15,
+    "number_of_students": 10
+  },
+  {
+    "_id": 6,
+    "name": "Japanese Intermediate",
+    "image": "https://live.staticflickr.com/65535/53079280430_152b3cffa0_m.jpg",
+    "price": 190,
+    "instructor_name": "Yuki Tanaka",
+    "instructor_image": "https://live.staticflickr.com/65535/53079709419_f261f500b3_m.jpg",
+    "instructor_email": "yuki.tanaka@example.com",
+    "available_seats": 7,
+    "number_of_students": 15
+  },
+  {
+    "_id": 7,
+    "name": "Russian Advanced",
+    "image": "https://live.staticflickr.com/65535/53079280425_e8e1df25a1_m.jpg",
+    "price": 220,
+    "instructor_name": "Svetlana Ivanova",
+    "instructor_image": "https://live.staticflickr.com/65535/53079920615_877fc86fab_m.jpg",
+    "instructor_email": "svetlana.ivanova@example.com",
+    "available_seats": 6,
+    "number_of_students": 4
+  },
+  {
+    "_id": 8,
+    "name": "English for Business",
+    "image": "https://live.staticflickr.com/65535/53079069224_64c99efb4f_m.jpg",
+    "price": 180,
+    "instructor_name": "John Smith",
+    "instructor_image": "https://live.staticflickr.com/65535/53078944367_c549157255_m.jpg",
+    "instructor_email": "john.smith@example.com",
+    "available_seats": 10,
+    "number_of_students": 7
+  },
+  {
+    "_id": 9,
+    "name": "Arabic Beginners",
+    "image": "https://live.staticflickr.com/65535/53078300422_a316aaefd6_m.jpg",
+    "price": 140,
+    "instructor_name": "Ahmed Hassan",
+    "instructor_image": "https://live.staticflickr.com/65535/53079506211_cfae042976_m.jpg",
+    "instructor_email": "ahmed.hassan@example.com",
+    "available_seats": 9,
+    "number_of_students": 6
+  }
+]
