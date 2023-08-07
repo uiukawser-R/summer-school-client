@@ -5,8 +5,8 @@ import Navbar from "../shered/Navbar";
 const Main = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
+            <div><Navbar></Navbar></div>
+            <div><Outlet></Outlet></div>
             <Footer></Footer>
         </div>
     );

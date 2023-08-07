@@ -6,7 +6,7 @@ const PopulerClasses = () => {
     const [classes, setClasses] = useState([]);
 
     useEffect(() => {
-        fetch("classes.json")
+        fetch("https://summer-camp-school-server-red.vercel.app/class")
             .then((res) => res.json())
             .then((data) => {
                 setClasses(data);

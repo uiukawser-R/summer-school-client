@@ -8,7 +8,8 @@
     "instructor_image": "https://live.staticflickr.com/65535/53080010288_077f334bcf_m.jpg",
     "instructor_email": "maria.rodriguez@example.com",
     "available_seats": 10,
-    "number_of_students": 5
+    "number_of_students": 5,
+    "status": "pending"
   },
   {
     "_id": 2,
@@ -19,7 +20,8 @@
     "instructor_image": "https://live.staticflickr.com/65535/53080010278_695b3e35b9_m.jpg",
     "instructor_email": "pierre.dubois@example.com",
     "available_seats": 8,
-    "number_of_students": 3
+    "number_of_students": 3,
+    "status": "pending"
   },
   {
     "_id": 3,
@@ -30,7 +32,8 @@
     "instructor_image": "https://live.staticflickr.com/65535/53079506211_cfae042976_m.jpg",
     "instructor_email": "hans.mueller@example.com",
     "available_seats": 5,
-    "number_of_students": 2
+    "number_of_students": 2,
+    "status": "pending"
   },
   {
     "_id": 4,
@@ -41,7 +44,8 @@
     "instructor_image": "https://live.staticflickr.com/65535/53080010303_8f60a0bdec_m.jpg",
     "instructor_email": "giulia.rossi@example.com",
     "available_seats": 12,
-    "number_of_students": 8
+    "number_of_students": 8,
+    "status": "pending"
   },
   {
     "_id": 5,
@@ -52,7 +56,8 @@
     "instructor_image": "https://live.staticflickr.com/65535/53079506206_5ff06e06c7_m.jpg",
     "instructor_email": "li.wei@example.com",
     "available_seats": 15,
-    "number_of_students": 10
+    "number_of_students": 10,
+    "status": "pending"
   },
   {
     "_id": 6,
@@ -63,7 +68,9 @@
     "instructor_image": "https://live.staticflickr.com/65535/53079709419_f261f500b3_m.jpg",
     "instructor_email": "yuki.tanaka@example.com",
     "available_seats": 7,
-    "number_of_students": 15
+    "number_of_students": 15,
+    "status": "pending"
+
   },
   {
     "_id": 7,
@@ -74,7 +81,9 @@
     "instructor_image": "https://live.staticflickr.com/65535/53079920615_877fc86fab_m.jpg",
     "instructor_email": "svetlana.ivanova@example.com",
     "available_seats": 6,
-    "number_of_students": 4
+    "number_of_students": 4,
+    "status": "pending"
+    
   },
   {
     "_id": 8,
@@ -85,7 +94,8 @@
     "instructor_image": "https://live.staticflickr.com/65535/53078944367_c549157255_m.jpg",
     "instructor_email": "john.smith@example.com",
     "available_seats": 10,
-    "number_of_students": 7
+    "number_of_students": 7,
+    "status": "pending"
   },
   {
     "_id": 9,
@@ -96,6 +106,7 @@
     "instructor_image": "https://live.staticflickr.com/65535/53079506211_cfae042976_m.jpg",
     "instructor_email": "ahmed.hassan@example.com",
     "available_seats": 9,
-    "number_of_students": 6
+    "number_of_students": 6,
+    "status": "pending"
   }
 ]
