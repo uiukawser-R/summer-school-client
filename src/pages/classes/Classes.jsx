@@ -9,7 +9,7 @@ const Classes = () => {
 
 
     useEffect(() => {
-        fetch("https://summer-camp-school-server-red.vercel.app/classes")
+        fetch("http://localhost:5000/classes")
             .then((res) => res.json())
             .then((data) => {
                 const newData = data.filter((classItem) => classItem.status === "Approve");

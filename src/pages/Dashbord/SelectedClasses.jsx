@@ -20,7 +20,7 @@ const SelectedClasses = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://summer-camp-school-server-red.vercel.app/carts/${item._id}`, {
+                fetch(`http://localhost:5000/carts/${item._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -80,7 +80,7 @@ const SelectedClasses = () => {
                                 <td>
                                     <div>
                                         <div>
-                                            <Link to="/dashbord/payment"><button className="btn btn-accent btn-xs p-1 mb-2">Pay</button></Link>
+                                            <Link to={`/dashbord/payment/${item._id}`}><button className="btn btn-accent btn-xs p-1 mb-2">Pay</button></Link>
 
 
                                         </div>

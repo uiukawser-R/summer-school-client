@@ -11,7 +11,7 @@ const InstructorsCourse = () => {
     const [classes, setClasses] = useState([]);
 
     useEffect(() => {
-        fetch("https://summer-camp-school-server-red.vercel.app/classes")
+        fetch("http://localhost:5000/classes")
             .then((res) => res.json())
             .then((data) => {
                 const newData = data.filter((classItem) => classItem.instructor_email === user?.email);
@@ -32,7 +32,6 @@ const InstructorsCourse = () => {
                             <th>Total Enrolled student</th>
                             <th>Status</th>
                             <th>Actions</th>
-                            <th>Feedback</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -55,10 +54,7 @@ const InstructorsCourse = () => {
                                 <td>Todo</td>
                                 <td>{classItem.status}</td>
                                 <td>
-                                    <button className="btn btn-accent">Update</button>
-                                </td>
-                                <td>
-                                    nothing
+                                    <button className="btn btn-accent btn-sm">Update</button>
                                 </td>
                             </tr>
                         ))}

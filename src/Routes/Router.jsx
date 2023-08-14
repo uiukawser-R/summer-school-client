@@ -15,6 +15,10 @@ import InstructorsCourse from "../pages/Dashbord/Instructors Course/InstructorsC
 import ManageClass from "../pages/Dashbord/ManageClass/ManageClass";
 import Classes from "../pages/classes/Classes";
 import Instructor from "../pages/Instructor/Instructor";
+import PaymentHistory from "../pages/Dashbord/PaymentHistory";
+import Wellcome from "../pages/Dashbord/Wellcome";
+import AdminRoute from "./adminRout/AdminRoute";
+import InstructorRoute from "./InstructorRoute/InstructorRoute";
 
 
 export const router = createBrowserRouter([
@@ -59,24 +63,33 @@ export const router = createBrowserRouter([
                 element:<EnrollrdClass></EnrollrdClass>,
             },
             {
-                path:'payment',
-                element:<Payment></Payment>
+                path:'payment/:id',
+                element:<Payment></Payment>,
+                loader: ({params})=>fetch(`http://localhost:5000/carts/${params.id}`)
             },
             {
                 path:'allusers',
-                element:<AllUsers></AllUsers>
+                element:<AdminRoute><AllUsers></AllUsers></AdminRoute>
             },
             {
                 path:'addclass',
-                element:<AddClass></AddClass>
+                element:<InstructorRoute><AddClass></AddClass></InstructorRoute>
             },
             {
                 path:'instructorcourses',
-                element:<InstructorsCourse></InstructorsCourse>
+                element:<InstructorRoute><InstructorsCourse></InstructorsCourse></InstructorRoute>
             },
             {
                 path:'manageclass',
-                element:<ManageClass></ManageClass>
+                element:<AdminRoute><ManageClass></ManageClass></AdminRoute>
+            },
+            {
+                path:'payment-history',
+                element:<PaymentHistory></PaymentHistory>
+            },
+            {
+                path:'wellcome',
+                element:<Wellcome></Wellcome>
             }
         ]
     }

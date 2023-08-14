@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import SocialLogin from "../../shered/social login/SocialLogin";
+import img from '../../assets/login.png'
 
 const SignUp = () => {
 
@@ -26,7 +27,7 @@ const SignUp = () => {
             .then(()=>{
                 console.log('user profile updateed');
                 const saveUser={name:data.name, email:data.email}
-                fetch('https://summer-camp-school-server-red.vercel.app/users',{
+                fetch('http://localhost:5000/users',{
                     method:'POST',
                     headers:{
                         'content-type':'application/json'
@@ -60,8 +61,7 @@ const SignUp = () => {
         <div className="hero min-h-screen bg-base-200 ">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">SignUp now!</h1>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <img src={img} alt="" />
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mt-14">
                     <form onSubmit={handleSubmit(onSubmit)} className="card-body">
@@ -110,7 +110,7 @@ const SignUp = () => {
 
                         </div> */}
                         <div className="form-control mt-6">
-                            <input className="btn btn-primary" type="submit" value="Login" />
+                            <input className="btn btn-primary" type="submit" value="SignUp" />
                         </div>
                         <p>I already have an account! please <Link className="text-red-500" to="/login"> Login</Link> </p>
                     </form>

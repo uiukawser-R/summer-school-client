@@ -10,7 +10,7 @@ const useUserRole = () => {
     enabled: !loading,
     queryFn: async () => {
       try {
-        const res = await fetch(`https://summer-camp-school-server-red.vercel.app/users${user?.email}`);
+        const res = await fetch(`http://localhost:5000/users${user?.email}`);
         return res.json();
       } catch (error) {
         // Handle error if necessary

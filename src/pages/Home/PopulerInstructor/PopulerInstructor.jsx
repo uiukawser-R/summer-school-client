@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination,Autoplay } from 'swiper/modules';
 import img1 from '../../../assets/Rectangle 1 (5).png'
 import img2 from '../../../assets/Rectangle 1 (2).png'
 import img3 from '../../../assets/Rectangle 1 (6).png'
@@ -9,7 +9,9 @@ import img6 from '../../../assets/Rectangle 1 (3).png'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 import SectionTitle from '../../../components/sectionTitle/SectionTitle';
+
 const PopulerInstructor = () => {
     return (
         <section className='mb-5'>
@@ -26,26 +28,27 @@ const PopulerInstructor = () => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
+                modules={[Pagination,Autoplay]}
+                autoplay={{ delay: 1000 }}
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src={img1} alt="" />
+                    <img className='rounded-s-full' src={img1} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img2} alt="" />
+                    <img className='rounded-e-full' src={img2} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img3} alt="" />
+                    <img className='rounded-s-full' src={img3} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img4} alt="" />
+                    <img className='rounded-e-full' src={img4} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img5} alt="" />
+                    <img className='rounded-s-full' src={img5} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img6} alt="" />
+                    <img className='rounded-e-full' src={img6} alt="" />
                 </SwiperSlide>
 
             </Swiper>

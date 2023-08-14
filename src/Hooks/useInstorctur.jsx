@@ -21,13 +21,13 @@
 // }
 // export default useInstorctur;
 
-
+  
 
 import { useQuery } from "@tanstack/react-query";
 import useAuth from "./useAuth";
 import useAxiosSecure from "./useAxiosSecure";
 
-const useInstructor = () => {
+const useInstorctur = () => {
     const { user, loading } = useAuth();
     const [axiosSecure] = useAxiosSecure();
 
@@ -49,5 +49,5 @@ const useInstructor = () => {
     return [isInstructor, isInstructorLoading];
 };
 
-export default useInstructor;
+export default useInstorctur;
 

@@ -1,7 +1,8 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import { FaHome } from 'react-icons/fa';
 import useAdmin from "../Hooks/useAdmin";
 import useInstorctur from "../Hooks/useInstorctur";
+import useAuth from "../Hooks/useAuth";
 
 const Dashbord = () => {
 
@@ -12,9 +13,21 @@ const Dashbord = () => {
 
     const [isAdmin] = useAdmin();
     const [isInstructor]=useInstorctur();
+    const nevigate=useNavigate();
     // const [isAdmin] = useAdmin();
     // console.log('instructor',isInstructor);
     // console.log('admin',isAdmin);
+
+
+    const { logOut } = useAuth();
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error));
+            nevigate('/')
+            // <Navigate to="/" state={{from: location}} replace></Navigate>
+    }
 
     return (
         <div className="drawer lg:drawer-open">
@@ -32,20 +45,20 @@ const Dashbord = () => {
 
                     {
                         isAdmin ? <>
-                            <h2 className="text-4xl mb-5">Admin dashbord</h2>
+                            <h2 className="text-2xl mb-5">Admin dashbord</h2>
                             <li><NavLink to='/dashbord/manageclass'>Manage Classes</NavLink></li>
                             <li><NavLink to='/dashbord/allusers'>Manage Users</NavLink></li>
                         </> : isInstructor ? <>
                             {/* Instructor specific content */}
-                            <h2 className="text-4xl mb-5">Instructor Dashboard</h2>
+                            <h2 className="text-2xl mb-5">Instructor Dashboard</h2>
                             <li><NavLink to='/dashbord/addclass'>Add a Class</NavLink></li>
                             <li><NavLink to='/dashbord/instructorcourses'>My Courses</NavLink></li>
                         </> : <>
                             {/* Normal user content */}
-                            <h2 className="text-4xl mb-5">User Dashboard</h2>
+                            <h2 className="text-2xl mb-5">Student Dashboard</h2>
                             <li><NavLink to='/dashbord/selectedclass'>My Selected Classes</NavLink></li>
                             <li><NavLink to='/dashbord/enrolled'>My Enrolled Classes</NavLink></li>
-                            <li><NavLink to='/dashbord/payment'>Payment</NavLink></li>
+                            <li><NavLink to='/dashbord/payment-history'>Payment history</NavLink></li>
                         </>
                     }
 
@@ -53,6 +66,7 @@ const Dashbord = () => {
 
                     <div className="divider"></div>
                     <li><NavLink to='/'><FaHome></FaHome> Home</NavLink></li>
+                    <li><button onClick={handleLogOut} className="btn btn-outline btn-sm"> Logout</button></li>
                 </ul>
 
             </div>

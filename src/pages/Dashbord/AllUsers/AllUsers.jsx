@@ -3,13 +3,13 @@
 
 // const AllUsers = () => {
 //     const { data: users = [], refetch } = useQuery(['users'], async () => {
-//         const res = await fetch('https://summer-camp-school-server-red.vercel.app/users')
+//         const res = await fetch('http://localhost:5000/users')
 //         return res.json();
 //     })
 
 
 //     const handleMakeAdmin = id => {
-//         fetch(`https://summer-camp-school-server-red.vercel.app/users/admin/${id}`, {
+//         fetch(`http://localhost:5000/users/admin/${id}`, {
 //             method: 'PATCH'
 //         })
 //             .then(res => res.json())
@@ -28,7 +28,7 @@
 //             })
 //     }
 //     const handleMakeInstroctur = id => {
-//         fetch(`https://summer-camp-school-server-red.vercel.app/users/instructor/${id}`, {
+//         fetch(`http://localhost:5000/users/instructor/${id}`, {
 //             method: 'PATCH'
 //         })
 //             .then(res => res.json())
@@ -105,7 +105,7 @@ import Swal from "sweetalert2";
 
 const AllUsers = () => {
     const { data: users = [], refetch } = useQuery(['users'], async () => {
-        const res = await fetch('https://summer-camp-school-server-red.vercel.app/users')
+        const res = await fetch('http://localhost:5000/users')
         return res.json();
     })
 
@@ -113,7 +113,7 @@ const AllUsers = () => {
     const handleMakeAdmin = id => {
         const role = 'admin'; 
       
-        fetch(`https://summer-camp-school-server-red.vercel.app/users/${id}`, {
+        fetch(`http://localhost:5000/users/${id}`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json', 
@@ -139,7 +139,7 @@ const AllUsers = () => {
       const handleMakeInstroctur = id => {
         const role = 'instructor'; 
       
-        fetch(`https://summer-camp-school-server-red.vercel.app/users/${id}`, {
+        fetch(`http://localhost:5000/users/${id}`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json', 
