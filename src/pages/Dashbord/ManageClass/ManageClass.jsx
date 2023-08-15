@@ -6,7 +6,7 @@
 
 
 //     const { data: classes = [], refetch } = useQuery(['classes'], async () => {
-//         const res = await fetch('http://localhost:5000/classes')
+//         const res = await fetch('https://summer-camp-school-server-uiukawser-r.vercel.app/classes')
 //         return res.json();
 //     })
 
@@ -18,7 +18,7 @@
 //     const handleApprove = id => {
 //         const status = 'Approve'; 
     
-//         fetch(`http://localhost:5000/classes/${id}`, {
+//         fetch(`https://summer-camp-school-server-uiukawser-r.vercel.app/classes/${id}`, {
 //             method: 'PATCH',
 //             headers: {
 //                 'Content-Type': 'application/json', 
@@ -46,7 +46,7 @@
 //     const handleDeny = id => {
 //         const status = 'Deny'; 
     
-//         fetch(`http://localhost:5000/classes/${id}`, {
+//         fetch(`https://summer-camp-school-server-uiukawser-r.vercel.app/classes/${id}`, {
 //             method: 'PATCH',
 //             headers: {
 //                 'Content-Type': 'application/json', 
@@ -141,7 +141,7 @@ const ManageClass = () => {
     const [disabledIds, setDisabledIds] = useState([]);
     
     const { data: classes = [], refetch } = useQuery(['classes'], async () => {
-        const res = await fetch('http://localhost:5000/classes')
+        const res = await fetch('https://summer-camp-school-server-uiukawser-r.vercel.app/classes')
         return res.json();
     });
 
@@ -149,7 +149,7 @@ const ManageClass = () => {
         const status = 'Approve'; 
         const updatedDisabledIds = [...disabledIds, id];
         
-        fetch(`http://localhost:5000/classes/${id}`, {
+        fetch(`https://summer-camp-school-server-uiukawser-r.vercel.app/classes/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json', 
@@ -177,7 +177,7 @@ const ManageClass = () => {
         const status = 'Deny'; 
         const updatedDisabledIds = [...disabledIds, id];
         
-        fetch(`http://localhost:5000/classes/${id}`, {
+        fetch(`https://summer-camp-school-server-uiukawser-r.vercel.app/classes/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json', 

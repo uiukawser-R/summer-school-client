@@ -30,14 +30,6 @@ const Navbar = () => {
                 
                      <li> <Link to='/dashbord/wellcome'>Dashboard</Link></li>
                      <button onClick={handleLogOut} >LogOut</button>
-                
-
-
-
-
-
-
-
             </> :
                 <>
                     <li><Link to='/login'>Login</Link></li>

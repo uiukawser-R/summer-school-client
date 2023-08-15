@@ -22,7 +22,7 @@ const ClassCard = (classItem) => {
         if (user && user.email) {
             const cartItem = { classId: _id, name: name, available_seats: available_seats, image: image, price: price, email: user.email }
 
-            fetch('http://localhost:5000/carts', {
+            fetch('https://summer-camp-school-server-uiukawser-r.vercel.app/carts', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

@@ -8,7 +8,7 @@ const{user}=useAuth();
 
 
 useEffect(() => {
-    fetch(`http://localhost:5000/payment?email=${user?.email}`)
+    fetch(`https://summer-camp-school-server-uiukawser-r.vercel.app/payment?email=${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
             setEnrolledClass(data);

@@ -33,7 +33,7 @@ export default useCart;
 //     const { refetch, data: cart = [] } = useQuery({
 //         queryKey: ['carts', user?.email],
 //         queryFn: async () => {
-//             const res = await fetch(`http://localhost:5000/carts?email=${user?.email}`);
+//             const res = await fetch(`https://summer-camp-school-server-uiukawser-r.vercel.app/carts?email=${user?.email}`);
 //             return res.json();
 //         },
 //     });
